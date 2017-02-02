@@ -1,0 +1,7 @@
+/* Styles specific to the residency page (/residency/index.html) */
+/* CSS tweaks to get things to look right in IE6 */
+
+.residency-text {
+  width: 598px;
+/*  height: 363px; */
+}

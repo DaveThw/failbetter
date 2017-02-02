@@ -1,0 +1,86 @@
+/* Styles specific to the residency page (/residency/index.html) */
+
+.content {
+  width: 581px;
+  padding: 9px;
+  overflow: auto;
+}
+
+/* Based on text1 from the original style sheet */
+p,
+li {
+  font-size: 11px;
+  color: #A2A2A2;
+}
+
+p {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+/* Based on text1Link from the original style sheet */
+p a {
+  color: #A2A2A2;
+  text-decoration: underline;
+}
+
+ul {
+  margin: 5px 0 0 30px;
+  padding: 0;
+}
+
+li {
+  margin: 0 0 5px 0px;
+  padding: 0px;
+}
+
+/* Based on text1TitleGrand from the original style sheet */
+h1 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #aaaaaa;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+h2,
+p.heading,
+p.heading a {
+  font-size: 12px;
+  font-weight: bold;
+  color: #aaaaaa;
+  margin: 12px 0 6px;
+}
+
+.image-frame-left,
+.image-frame-right {
+  border: #a2a2a2 solid 1px;
+  background-color: #333333;
+  padding: 3px;
+  margin: 0 0 15px;
+}
+
+.image-frame-left {
+  float: left;
+  margin-right: 5px;
+  clear: right;
+  clear: both;
+}
+
+.text-box {
+  margin: 0 0 0 180px;
+}
+
+.capital_logo {
+  padding: 0px;
+  margin: 0 0 15px;
+  text-align: center;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.show {
+  font-style: italic;
+}
