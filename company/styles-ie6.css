@@ -1,0 +1,21 @@
+/* Styles specific to the company pages (/company/...) */
+/* CSS tweaks to get things to look right in IE6 */
+
+.company-text {
+  width: 589px;
+/*  height: 357px; */
+}
+
+
+/* Styles for the company->history page */
+
+
+/* Styles for the company->team page */
+
+/* No good idea why we need to do this, but there we go... */
+.team-member .photo {
+  left: -3px;
+}
+
+
+/* Styles for the company->support page */

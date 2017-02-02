@@ -1,0 +1,333 @@
+
+.non-fbp-show ,
+.fbp-show {
+  font-style: italic;
+}
+
+/* Styles specific to the company pages (/company/...) */
+
+.sub-content {
+  padding: 9px;
+  padding-bottom: 0px;
+  width: 573px;
+  overflow: auto;
+}
+
+/* Based on text1 from the original style sheet */
+p,
+dt,
+dd,
+li {
+/*  background-color: red; */
+/*  font-size: x-small; */
+  font-size: 11px;
+  color: #A2A2A2;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Based on text1Link from the original style sheet */
+p a {
+  color: #A2A2A2;
+  text-decoration: underline;
+}
+
+/* Based on text1TitleGrand from the original style sheet */
+h1 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #aaaaaa;
+  margin: 0;
+}
+
+/* Based on text1Title from the original style sheet */
+h2,
+h3 {
+  font-size: 11px;
+  font-weight: bold;
+  color: #999999;
+  margin: 0;
+}
+
+h2 {
+margin-top: 10px;
+}
+
+.break {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+.image-frame-left,
+.image-frame-right {
+  border: #a2a2a2 solid 1px;
+  background-color: #333333;
+  padding: 3px;
+  margin: 0 0 15px;
+}
+
+.image-frame-left {
+  float: left;
+  margin-right: 3px;
+  clear: right;
+}
+
+.image-frame-right {
+  float: right;
+  margin-left: 3px;
+  clear: left;
+}
+
+.image-frame-left img,
+.image-frame-right img {
+  border: 0 none;
+}
+
+/* We need these two for Firefox and Safari */
+.image-frame-left + p {
+  clear: right;
+}
+
+.image-frame-right + p {
+  clear: left;
+}
+
+
+
+
+/* Styles mainly for the company->team page */
+
+.team-member {
+  margin: 0 0 15px;
+  padding: 0;
+  position: relative;
+/*  width: 560px; */
+  overflow: hidden;
+/*  background-color: red; */
+}
+
+.team-member .image-frame-left {
+  margin: 0 0 -26px 0;
+  position: relative;
+  top: -26px;
+}
+
+.team-member .photo {
+  display: block;
+  border: 4px #a0a0a0 solid;
+/*  background-color: #a0a0a0;
+  padding: 4px; */
+  margin: 0 0 -26px 0;
+  padding: 0;
+  float: left;
+  position: relative;
+  top: -26px;
+/*  position: absolute; */
+/*  top: 0px; */
+/*  left -140px; */
+}
+
+.biog,
+.team-member h2,
+.team-member h3 {
+  margin-left: 140px;
+  padding-left: 0px;
+}
+
+.team h2 {
+  margin-top: 0px;
+}
+
+/* h1, */
+.team-member h2 {
+  clear: both;
+}
+
+.past-company {
+  margin-bottom: 10px;
+}
+
+h2.associates {
+  margin: 0 0 0 0px;
+  padding: 0;
+}
+
+ul.associates {
+  margin: 0 0 10px 0px;
+  padding: 0;
+}
+
+ul.associates  li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Styles mainly for the company->collaborators page */
+
+.sub-content.collaborators {
+  overflow: auto;
+}
+
+.collaborators h1 {
+  margin-bottom: 10px;
+}
+
+.collaborators .image-frame-left {
+  clear: left;
+  margin-bottom: 6px;
+}
+
+.collaborators ul {
+  margin: 10px 0 10px 146px;
+  padding: 0;
+}
+
+.collaborators li {
+  margin: 0 0 2px;
+  padding: 0 0 0 50px;
+  list-style: none;
+  text-indent: -50px;
+}
+
+.collaborators li a.fbp-show {
+  text-decoration: none;
+}
+
+.collaborators li a.fbp-show:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Styles mainly for the company->history page */
+
+.history p {
+  padding: 5px 0 0;
+}
+
+.history .break {
+  margin-bottom: 9px;
+}
+
+
+/* Styles mainly for the company->support page */
+
+/* Based on text1Title from the original style sheet */
+strong,
+strong a {
+  font-size: 11px;
+  font-weight: bold;
+  color: #999999;
+}
+
+.support p {
+/*  margin-top: 10px; */
+  margin-bottom: 10px;
+}
+
+/* Based on text1 from the original style sheet */
+.support li {
+/*  background-color: red; */
+  font-size: 11px;
+  color: #A2A2A2;
+  margin: 0;
+  padding: 0 3px;
+/*  width: 274px; */
+  width: 140px;
+  list-style: none;
+}
+
+.support p.support {
+  margin-bottom: 15px;
+}
+
+.support ul {
+/*  background-color: green; */
+  margin: 0px 0 0;
+  padding: 0px;
+}
+
+.support-left {
+  float: left;
+  width: 280px;
+}
+
+ul.friends-left {
+  float: left;
+/* Silly fudge to help make sure we get a gap between the ul's and the hr... */
+/*  margin-bottom: 15px; */
+}
+
+ul.friends-right {
+/* Seem to need this for things to work in Safari... */
+/* Floating left looks better than floating right (get a small gap in Safari, 'cos the scroll bar is thinner!) */
+  float: left;
+}
+
+.gala-photo {
+  display: block;
+  text-align: center;
+  margin: 30px 0 10px 280px;
+/*  background-color: red; */
+  padding: 0;
+  font-size: 11px;
+}
+
+.gala-photo img {
+  border: #a2a2a2 solid 1px;
+  background-color: #333333;
+  padding: 3px;
+}
+
+hr {
+  clear: both;
+  height: 1px;
+  color: #999999;
+  background-color: #999999;
+  margin: 10px 0;
+  border: none;
+}
+
+/* Silly fudge for IE - doesn't seem to collapse for margins between ul.left and hr
+   (could it be because they don't follow each other in the html..?!) */
+ul + hr {
+  margin-top: 0;
+}
+
+.support .break {
+/* Seems to be the minimum height in IE6... odd... */
+  height: 12px;
+/*  background-color: red; */
+/*  width: 550px; */
+}
+
+.support p.challenge {
+  margin-top: 5px;
+}
+
+dt {
+  float: left;
+}
+
+dd {
+  margin-bottom: 5px;
+}
+
+p.fail-better-quote {
+  margin-top: 15px;
+}
+
+p.fail-better-quote cite {
+  font-style: normal;
+}
+
+p.fail-better-quote .non-fbp-show {
+  font-style: italic;
+}
