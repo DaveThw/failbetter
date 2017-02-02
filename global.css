@@ -1,0 +1,344 @@
+/* FailBetter.co.uk global style sheet */
+/* General styles, for all pages */
+
+/* This style based on .text from the 'original' style sheet */
+body {
+  background-color: #a7a7a7;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  color: #A2A2A2;
+  text-decoration: none;
+  margin: 0;
+}
+
+a {
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  color: #A2A2A2;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Layout of page header */
+.header-shadow {
+  background-color: #a7a7a7;
+  background-image: url("./images/header-background.png");
+  background-repeat: no-repeat;
+  display: block;
+  width : 788px;
+  height: 94px;
+/*  position: absolute;
+  top: 11px; */
+/*  left: 10px; */
+/*  left: 14px; */
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 21px;
+}
+
+.header {
+  background-color: #000000;
+  background-image: url("./images/header-background.png");
+  background-repeat: no-repeat;
+  width : 778px;
+  height: 83px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.company-logo {
+/*  background-color: #000080; */
+  background-color: #212B84;
+/*  background-image: url("./images/logo-background.png"); */
+  background-image: url("./images/header-background.png");
+  background-position: -15px -15px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 135px;
+  height: 68px;
+  padding: 0;
+  margin: 0;
+  border: 0 none;
+}
+
+.company-logo .fail-better {
+  background-color: #999999;
+/*  background-image: url("./images/fail-better-background.png"); */
+  background-image: url("./images/header-background.png");
+  background-position: -24px -28px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 13px;
+  left: 9px;
+  width: 117px;
+  height: 23px;
+  padding-top: 3px;
+/*  font-family: Tahoma; */
+/*  font-size: 19.5px; */
+/*  letter-spacing: 0.1em; */
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+  text-align: center;
+  color: #101010;
+  text-transform: lowercase;
+}
+
+.company-logo .productions {
+/*  background-color: #181818; */
+  background-color: #222222;
+  position: absolute;
+  top: 39px;
+  left: 9px;
+  width: 117px;
+  height: 28px;
+  padding-top: 1px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  color: #bbbbbb;
+  text-transform: lowercase;
+}
+
+.supported-by {
+/*  background-color: black; */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+/*  width: 533px; */
+/*  width: 454px; */
+/* width + padding-right = 600px; */
+  width: 250px;
+/*  height: 54px; */
+/* height + padding-top = 83px; */
+  height: 25px;
+  text-align: right;
+/*  padding-top: 29px; */
+  padding-top: 47px;
+/*  padding-right: 67px; */
+/*  padding-right: 146px; */
+  padding-right: 109px;
+}
+
+/* This definition based on the .A7Comms style from the 'original' style sheet */
+.supported-by,
+.supported-by a,
+.footer,
+.footer a {
+  font-family: Tahoma;
+  font-size: 10px;
+  color: #cccccc;
+  font-style: normal;
+  line-height: normal;
+  font-weight: normal;
+  text-transform: none;
+  font-variant: normal;
+  text-decoration: none;
+}
+
+.supported-by a:hover,
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.supported-by img {
+  position: absolute;
+  top: 45px;
+  right: 14px;
+  border: 0 none;
+}
+
+
+/* Layout of main body of the page */
+.main-body-wrapper {
+  width : 788px;
+  padding: 0 0 10px;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 118px;
+  margin-bottom: 30px;
+  background-color: #a7a7a7;
+  background-image: url("./images/shadow-mid.png");
+  background-repeat: repeat-y;
+}
+
+.main-body-shadow-top,
+/* .main-body-shadow-mid, */
+.main-body-shadow-bottom {
+  background-color: #a7a7a7;
+  background-repeat: no-repeat;
+  width : 788px;
+  padding: 0px;
+  display: block;
+  position: absolute;
+  left: 0px;
+/* We seem to need this for firefox, otherwise the shadow appears in front of the content! */
+  z-index: 1;
+}
+
+.main-body-shadow-top {
+  background-image: url("./images/shadow-top-body.png");
+  height: 10px;
+  top: 0px;
+}
+
+/*
+.main-body-shadow-mid {
+  background-image: url("./images/shadow-mid.png");
+  background-repeat: repeat-y;
+  top: 10px;
+  bottom: 10px;
+}
+*/
+
+.main-body-shadow-bottom {
+  background-image: url("./images/shadow-bottom.png");
+  height: 10px;
+  bottom: 0px;
+}
+
+.main-body {
+  background-color: #000000;
+  width : 778px;
+/*  height: 490px; */
+  display: block;
+/*  position: absolute;
+  top: 0px;
+  left: 0px; */
+/* We seem to need this for firefox, in order to get the z-index to work */
+  position: relative;
+  margin: 0;
+  padding: 0px;
+  overflow: auto;
+/* We seem to need this for firefox, otherwise the shadow appears in front of the content! */
+  z-index: 2;
+}
+
+
+/* General styles for the layout of the main content of the page */
+.content {
+/*  position: absolute;
+  top: 10px;
+  left: 163px; */
+  position: relative;
+/*  float: left; */
+  margin-top: 10px;
+  margin-left: 163px;
+  margin-bottom: 11px;
+  display: block;
+  width: 593px;
+/*  height: 363px; */
+  min-height: 363px;
+  padding: 2px 3px;
+  border: #a2a2a2 solid 1px;
+  background-color: #222222;
+/*  overflow: auto; */
+}
+
+.sub-content {
+/*  position: absolute;
+  top: 2px;
+  left: 3px;*/
+  position: relative;
+  margin: 0;
+  width: 587px;
+/*  height: 357px; */
+  min-height: 357px;
+  padding: 2px;
+  border: #a2a2a2 solid 1px;
+  background-color: #222222;
+}
+
+q:before,
+q:after {
+/* 'cos IE doesn't seem to do content: :before or :after, I'm including the quotes in the html...*/
+/* So we need to stop Firefox, etc from showing them */
+  content: "";
+}
+
+
+/* Layout of the footer */
+.footer-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer {
+  width : 776px;
+  height: 20px;
+  display: block;
+/*  position: absolute;
+  top: 516px;
+  left: 10px; */
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+/*  line-height: 34px; */
+  text-align: center;
+}
+
+/*
+.footer a.design-by {
+  padding: 11px 0 11px 39px;
+  background-image: url("./images/SiteTag_BGaaaaaa.gif");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+*/
+
+.davethwaites:before {
+/*  content: "failbetter-web@"; */
+}
+
+
+
+
+.fbp-show {
+/*  background-color: blue; */
+}
+
+.non-fbp-show {
+/*  background-color: red; */
+}

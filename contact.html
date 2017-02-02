@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB" >
+<head>
+ <title>Contact Us - Fail Better Productions</title>
+ <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+ <meta http-equiv="Content-Script-Type" content="text/javascript" />
+ <meta http-equiv="Content-Language" content="en-GB" />
+ <meta name="description" content="Send a message to Fail Better Productions.  For details about the company and our previous productions visit www.failbetter.co.uk." />
+ <meta name="language" content="en-GB" />
+ <link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon" />
+ <meta name="author" content="Coding by Dave Thwaites - dave.thwaites.org.uk" />
+ <!-- Originaly created by DRT (by hand!), Nov 2007 -->
+ <!-- Some degree of auomatic creation added by DRT, Dec 2007 -->
+ <!-- An extended degree of auomatic creation added by DRT, June 2008 - headers and footers for every page, mainly -->
+ <meta name="rating" content="General" />
+ <meta name="ROBOTS" content="ALL" />
+ <meta name="Coverage" content="Worldwide" />
+ <link href="./global.css" rel="stylesheet" type="text/css" />
+ <link href="./menu.css" rel="stylesheet" type="text/css" />
+ <link href="./contact.css" rel="stylesheet" type="text/css" />
+ <!-- Styles specific to IE - mainly just to give us pretty scroll bars in IE without Firefox, etc complaining... -->
+ <!--[if IE]>
+  <link href="./global-ie.css" rel="stylesheet" type="text/css" />
+ <![endif]-->
+ <!-- Styles specific to making things work in IE 7... -->
+ <!--[if lte IE 7]>
+  <link href="./global-ie7.css" rel="stylesheet" type="text/css" />
+ <![endif]-->
+ <!-- Styles specific to making things work in IE 6... -->
+ <!--[if lte IE 6]>
+  <link href="./global-ie6.css" rel="stylesheet" type="text/css" />
+ <![endif]-->
+</head>
+<body>
+
+<div class="wrapper">
+ <div class="main-body-wrapper">
+  <div class="main-body-shadow-top"></div>
+  <div class="main-body-shadow-bottom"></div>
+  <div class="main-body">
+
+   <div class="content">
+    <h1 class="hidden">Contact Us</h1>
+    <form method="post" action="./contact.php">
+     <p>Your comments, suggestions and queries are important to us so if you would like to contact us then please complete the form below and we will respond as quickly as possible.</p>
+     <p>IMPORTANT: Please make sure your email address is correct so we can respond to you.</p>
+     <div class="name">
+      <label for="name">Name:</label>
+      <input name="name" id="name" type="text" size="35" maxlength="30" />
+     </div>
+     <div class="email">
+      <label for="email">Email Address:</label>
+      <input name="email" id="email" type="text" size="35" maxlength="60" />
+     </div>
+     <div class="subject">
+      <label for="subject">Subject:</label>
+      <input name="subject" id="subject" type="text" size="35" maxlength="60" />
+     </div>
+     <div class="howhear">
+      <label for="howhear">How did you hear about us?</label>
+      <select name="howhear" size="1">
+       <option value="0" selected="selected">-please select one-</option>
+       <option value="SawPerformance">Saw a Performance</option>
+       <option value="ReadReview">Read a Review</option>
+       <option value="WOM">Word of Mouth</option>
+<!--       <option value="Ambassador">Fail Better Ambassador</option> -->
+       <option value="ProdPublicity">Production Publicity</option>
+       <option value="CAPITAL">The CAPITAL Centre</option>
+       <option value="A7Comms">A7 Communications Site</option>
+       <option value="EdEvent">Education Event</option>
+       <option value="Facebook">Facebook</option>
+       <option value="Accident">Chance Find</option>
+      </select>
+     </div>
+     <div class="enquiry">
+      <label for="enquiry">Your Enquiry:</label>
+      <textarea name="enquiry" id="enquiry" cols="80" rows="9"></textarea>
+     </div>
+     <div class="buttons">
+      <input name="reset" type="reset" id="reset" value="reset" />
+      <input name="submit" type="submit" id="submit" value="submit" />
+     </div>
+    </form>
+   </div>
+
+
+   <h2 class="menu">Menu</h2>
+   <div class="menu"></div>
+   <ul class="menu contact">
+    <li id="menu-home"><a href="./">Home</a></li>
+    <li id="menu-company" class="has-submenu">
+       <a href="./company/team.html">Company</a>
+       <div>
+        <ul class="sub-menu">
+         <li><a href="./company/team.html">Creative Team</a></li>
+         <li><a href="./company/collaborators.html">Collaborators</a></li>
+         <li><a href="./company/history.html">History</a></li>
+         <li><a href="./company/support.html">Support</a></li>
+        </ul>
+       </div>
+    </li>
+    <li id="menu-residency"><a href="./residency/">Residency</a></li>
+    <li id="menu-productions" class="has-submenu">
+       <a href="./productions/">Productions</a>
+       <div>
+        <ul class="sub-menu">
+         <li><a href="./productions/madman/">Diary of a Madman</a></li>
+         <li><a href="./productions/discords/">Discords</a></li>
+         <li><a href="./productions/stasis/">Stasis</a></li>
+         <li><a href="./productions/persephone/">Persephone</a></li>
+         <li><a href="./productions/lorca/">Play Without a Title</a></li>
+         <li><a href="./productions/head/">Head</a></li>
+         <li><a href="./productions/phaedraslove/">Phaedra's Love</a></li>
+         <li><a href="./productions/echoandnarcissus/">Echo &amp; Narcissus</a></li>
+         <li><a href="./productions/crave/">Crave</a></li>
+        </ul>
+       </div>
+    </li>
+    <li id="menu-press" class="has-submenu">
+       <a href="./press/">Press Room</a>
+       <div>
+        <ul class="sub-menu">
+         <li><a href="./press/madman/">Diary of a Madman</a></li>
+         <li><a href="./press/discords/">Discords</a></li>
+         <li><a href="./press/stasis/">Stasis</a></li>
+         <li><a href="./press/persephone/">Persephone</a></li>
+         <li><a href="./press/lorca/">Play Without a Title</a></li>
+         <li><a href="./press/head/">Head</a></li>
+         <li><a href="./press/phaedraslove/">Phaedra's Love</a></li>
+         <li><a href="./press/echoandnarcissus/">Echo &amp; Narcissus</a></li>
+         <li><a href="./press/crave/">Crave</a></li>
+        </ul>
+       </div>
+    </li>
+    <li id="menu-contact" class="selected"><strong>Contact us</strong></li>
+   </ul>
+
+  </div>
+ </div>
+
+
+<div class="header-wrapper">
+ <div class="header-shadow">
+  <div class="header">
+   <h2 class="company-logo"><span class="fail-better">Fail Better</span> <span class="productions">Productions</span></h2>
+   <div class="supported-by">
+    <a href="http://www.failbetter.co.uk/">Fail Better Productions.co.uk</a> is supported by<br />
+    <a href="http://www.sitebitez.co.uk/" target="_blank" title="http://www.sitebitez.co.uk/ - Opens in a new window">SiteBitez.co.uk<br />
+    <img src="./images/sitebitez.jpg" width="93" height="38" title="SiteBitez.co.uk; fast, low-cost, bespoke website packages." alt="SiteBitez.co.uk; fast low-cost, bespoke website packages." /></a>
+   </div>
+   <br />
+  </div>
+ </div>
+</div>
+
+
+<div class="footer-wrapper">
+ <div class="footer">
+  website designed &amp; built by <a href="http://www.a7communications.co.uk/" target="_blank" title="http://www.a7communications.co.uk/ - Opens in a new window">A7 Communications</a> &brvbar;
+  further coding &amp; support by Dave Thwaites &brvbar;
+  &copy; copyright 2004 <a href="http://www.failbetter.co.uk/">Fail Better Productions</a> &brvbar;
+  <a href="http://validator.w3.org/check?uri=referer" title="valid xhtml 1.0 transitional">valid html</a> &brvbar;
+  <a href="http://jigsaw.w3.org/css-validator/check/referer" title="valid css 2.1">valid css</a>
+ </div>
+</div>
+
+ <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+ </script>
+ <script type="text/javascript">
+  var pageTracker = _gat._getTracker("UA-6079122-1");
+  pageTracker._trackPageview();
+ </script>
+
+</div>
+</body>
+</html>

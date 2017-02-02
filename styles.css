@@ -1,0 +1,140 @@
+/* Styles specific to the home page (/index.html) */
+
+.home-text {
+/*  background: #333333; */
+/*  background-color: red; */
+/*  position: absolute; 
+  top: 7px;
+  left: 348px; */
+/*  margin: 7px 0 7px 344px; */
+  padding: 0;
+  width: 250px;
+/*  height: 355px; */
+}
+
+.content {
+  overflow: auto;
+}
+
+h1 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #bbbbbb;
+  margin: 3px 0px 4px 3px;
+/*  padding: 0px 0px 0px 3px; */
+/*  float: left;
+  width: 330px; */
+}
+
+h1:first-letter {
+  text-transform: lowercase;
+}
+
+p {
+  color: #bbbbbb;
+  margin: 2px 0px 14px 3px;
+/*  padding: 0px 0px 0px 3px; */
+}
+
+p.intro {
+/*  width: 330px;
+  float: left; */
+}
+
+.home-collage {
+/*  position: absolute;
+  top: 18px;
+  left: 17px; */
+  position: relative;
+  float: left;
+  margin: 0 0 10px 3px;
+/* This right hand side padding is mainly for the benefit of IE6 -
+   otherwise we lose the right hand border on the right hand images!.. */
+  padding: 0 1px 0 0;
+}
+
+.home-collage img {
+/*  width: 110px;
+  height: 110px; */
+  margin: 0 -4px -2px 0;
+  margin: 0 -1px 1px 0;
+/*  margin: -1px -2px; */
+/*  border: 0px; */
+  border: 1px solid #bbbbbb;
+/*  margin: 0 0px 20px 0; */
+  padding: 0;
+}
+
+h2 {
+  font-size: 11px;
+  font-weight: bold;
+  color: #999999;
+  margin: 0 0px 3px;
+  padding: 0px 0px 0px 3px;
+  border-bottom: 1px solid #999999;
+  text-transform: lowercase;
+}
+
+.news {
+  width: 240px;
+/*  height: 254px; */
+  overflow: auto;
+  margin: -5px 0 0;
+/*  padding: 0px 0px 0px 3px; */
+  color: #bbbbbb;
+  float: right;
+}
+
+.news h3 {
+/*  padding-top: 10px; */
+  font-size: 11px;
+  font-weight: bold;
+  color: #999999;
+  margin: 10px 0 0 3px;
+}
+
+.news h3:first-child {
+  margin-top: 0px;
+}
+
+.news div {
+  margin: 0px 3px 10px 3px;
+  border-bottom-width: 1px;
+  border-bottom-color: #777777;
+  border-bottom-style: solid;
+  padding: 0 0 1px;
+}
+
+.news div p {
+  margin: 10px 0px 0px 0px;
+  padding: 0;
+}
+
+.news div p:first-child {
+  margin-top: 0px;
+}
+
+/*
+.news dd p {
+  padding: 0;
+  margin: 0 0 5px;
+}
+*/
+
+.news a,
+p.outro a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.news a:hover,
+p.outro a:hover {
+  text-decoration: underline;
+}
+
+p.outro {
+/*  width: 330px;
+  float: left; */
+  clear: left;
+  margin-top: 10px;
+}

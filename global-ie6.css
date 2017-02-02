@@ -1,0 +1,192 @@
+/* FailBetter.co.uk global style sheet */
+/* Style patches that make things work in IE 6 (and earlier?) */
+
+
+/* Patch to give us :hover on everything in IE 5&6 */
+/* Might need to ensure this is served with the correct MIME type */
+/* (Should be text/x-component) */
+/* Might work to add the line "AddType text/x-component .htc" to an .htaccess file..? */
+body {
+  behavior: url(/csshover2.htc);
+}
+
+
+/* This helps to center our page */
+
+.wrapper,
+.header-wrapper,
+.footer-wrapper {
+  width: 100%;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+/* and this cancels out the centered text! */
+.main-body-wrapper,
+.header-shadow {
+  text-align: left;
+/* This gives us a little margin on either side in a very narrow window */
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+/* Layout of page header */
+.company-logo .fail-better {
+  height: 26px;
+}
+
+.company-logo .productions {
+  height: 29px;
+}
+
+.supported-by {
+  width: 600px;
+  height: 83px;
+}
+
+
+/* General styles for the layout of the main content of the page */
+.main-body {
+  overflow: visible;
+}
+
+.content {
+  width: 603px;
+/*  height: 369px; */
+}
+
+.sub-content {
+  width: 595px;
+/*  height: 363px; */
+}
+
+/* Need this to stop main-body-shadow-top from having a minimum height of 13px
+   (presumably based on the height of 1 line of text?) */
+.main-body-shadow-top {
+  font-size: 1px;
+}
+
+/* for some reason main-body-shadow-bottom seems to be 1 pixel too high up...
+   (and so we see 1 line of the mid-shadow underneath the bottom of the shadow!) */
+/* Alternatively, we can do the same thing as for main-body-shadow-top!
+    Hmm... doesn't seem to work on every page, for some reason... */
+.main-body-shadow-bottom {
+/*  font-size: 1px; */
+  bottom: -1px;
+}
+
+/* Menu styles, for all pages */
+
+/* ***** Define normal behaviour/looks for all main menu items ***** */
+
+div.menu {
+  height: 380px;
+/* Nasty, silly hack for IE6 this, but it seems to do the job... */
+/* This version gets the height from an element with id 'main-body' - I'm less keen on using
+   it as I haven't used id very much and don't otherwise have any need for this one... */
+/*  height: expression((document.getElementById('main-body').offsetHeight - 11) + 'px'); */
+/* This version gets the height from the first child of the first child of the body element
+   This should be the <div class="main-body-wrapper"> - we can with things out from there */
+  height: expression((body.childNodes[0].childNodes[0].offsetHeight - 21) + 'px');
+}
+
+/* The li is actually invisible - the span, strong, or a element is the one that we see */
+.menu li span,
+.menu li strong,
+.menu li a {
+  width: 126px;
+  height: 25px;
+/* For some reason transparent borders come out pale gray... */
+  border-color: #212B84;
+}
+
+/* Highlight the main menu items when we hover over them */
+/* Modern trousers, and older ones with the :hover patch will work with 'li:hover a' */
+/* (And this ensures that the item stays highlighted as we move up and down the submenu) */
+/* Older browsers without Javascript won't do that though, so we have a 'li a:hover' rule too... */
+.menu li a:hover,
+.menu li:hover a,
+.menu li a:focus,
+.menu li a:active {
+  width: 139px;
+}
+
+/* Set the widths of the main menu items to be correct to only just overlap with the left border of their submenu */
+/* Unfortunately IE6 with whatever:hover doesn't seem to be picking up on li.has-submenu:hover a, which is what we really want */
+.menu li.has-submenu:hover a,
+.menu li.has-submenu a:hover {
+  width: 134px;
+}
+.menu li.has-submenu a:hover {
+  padding-right: 18px;
+}
+
+
+/* ***** Display the pop-up submenu when we hover over it ***** */
+
+.menu li.has-submenu:hover .sub-menu {
+  width: 131px;
+} 
+
+/* Default state for the text of a submenu list item... */
+/* (including '...li a:hover' to stop submenu items getting wider when you hover over them, in IE6) */
+/* (Getting wider 'cos of the rule above for '.menu li a:hover' being more specific than the over rules, for IE6) */
+.menu li.has-submenu .sub-menu li a:hover,
+.menu li.has-submenu .sub-menu li strong,
+.menu li.has-submenu .sub-menu li a {
+  width: 127px;
+}
+.menu li.has-submenu .sub-menu li strong,
+.menu li.has-submenu .sub-menu li a {
+  height: 25px;
+  padding-right: 0px;
+/* For some reason transparent borders come out pale gray... */
+  border-color: #333333;
+}
+
+
+/* ***** Start definitions for visible, currently selected sub-menus ***** */
+
+/* Highlight the main menu item, if it is currently selected */
+.menu li.selected span,
+.menu li.selected strong,
+.menu li.selected a,
+.menu li:hover.selected a,
+.menu li.selected a:hover {
+  width: 140px;
+}
+
+/* Default state for a submenu item, when the submenu is visible */
+/* (Text is a bit like a pop-up submenu item though...) */
+.menu li.selected .sub-menu li span,
+.menu li.selected .sub-menu li strong,
+.menu li.selected .sub-menu li a {
+  width: 120px;
+  height: 22px;
+  border-color: #212B84;
+}
+
+/* Highlight it when we hover over it */
+.menu li.selected .sub-menu li:hover span,
+.menu li.selected .sub-menu li:hover a,
+.menu li.selected .sub-menu li a:focus,
+.menu li.selected .sub-menu li a:active {
+  width: 133px;
+}
+
+/* However... if we're within the submenu already, the submenu items want to stick out a little bit more!.. */
+.menu.submenu-item li.selected .sub-menu li:hover span,
+.menu.submenu-item li.selected .sub-menu li:hover a,
+.menu.submenu-item li.selected .sub-menu li a:focus,
+.menu.submenu-item li.selected .sub-menu li a:active {
+  width: 137px;
+}
+
+/* Highlight the currently selected submenu item */
+.menu li.selected .sub-menu li.selected span,
+.menu li.selected .sub-menu li.selected strong {
+  width: 138px;
+}

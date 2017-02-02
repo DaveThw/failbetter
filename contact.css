@@ -1,0 +1,112 @@
+/* Styles specific to the 'Contact Us' pages */
+
+/* This style based on .text1 from the 'original' style sheet */
+.content form {
+  font-size: 11px;
+  margin: 0;
+  padding: 17px 5px 0;
+}
+
+.content form p {
+  margin: 0px;
+}
+
+.content form div {
+  display: block;
+  margin: 15px 0 0;
+  padding: 0;
+}
+
+.content form .name,
+.content form .subject {
+  float: left;
+  clear: left;
+  width: 296px;
+}
+
+.content form .email,
+.content form .howhear {
+}
+
+.content form label {
+/* Using display: block here to persuade the input boxes onto the next line... */
+  display: block;
+  margin: 0;
+}
+
+.content form input,
+.content form select,
+.content form textarea {
+/* IE seems to default to some other font for form inputs... */
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #222222;
+  background-color: #bbbbbb;
+  border: 0 none;
+/*  display: block; */
+  margin: 0;
+}
+
+.content form textarea {
+  max-width: 580px;
+}
+
+#reset {
+  margin-left: 213px;
+}
+
+#submit {
+  margin-left: 42px;
+}
+
+
+
+/* Styles for the contact_done page */
+
+.content .company-logo {
+  background-image: url("./images/full_logo.gif");
+  background-position: 0 0;
+  position: absolute;
+  top: 152px;
+  left: 226px;
+  width: 149px;
+  height: 78px;
+}
+
+.content .company-logo .fail-better {
+  background-image: url("./images/full_logo.gif");
+  background-position: -7px -9px;
+  position: absolute;
+  top: 9px;
+  left: 7px;
+  width: 135px;
+  height: 24px;
+  padding-top: 3px;
+  padding-left: 1px;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+}
+
+.content .company-logo .productions {
+  background-image: url("./images/full_logo.gif");
+  background-position: -7px -36px;
+  position: absolute;
+  top: 36px;
+  left: 7px;
+  width: 135px;
+  height: 31px;
+  padding-top: 2px;
+  padding-left: 1px;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+p.thanks {
+  text-align: center;
+  font-size: 11px;
+/*  background-color: red; */
+  position: absolute;
+  top: 127px;
+  width: 593px;
+  margin: 0;
+}

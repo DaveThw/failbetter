@@ -1,0 +1,25 @@
+/* FailBetter.co.uk global style sheet */
+/* General styles, for all pages */
+
+/* Styles specific to Internet Explorer */
+
+/* These colours will get used by anything needing scroll bars, inside .content */
+.content {
+  scrollbar-face-color: #222222;
+  scrollbar-track-color: #222222;
+  scrollbar-arrow-color: #999999;
+}
+
+/* For IE6 */
+.content {
+  scrollbar-shadow-color: #999999;
+  scrollbar-highlight-color: #999999;
+}
+
+/* For IE7 */
+*>.content {
+  scrollbar-shadow-color: #222222;
+  scrollbar-highlight-color: #222222;
+  scrollbar-3dlight-color: #999999;
+  scrollbar-darkshadow-color: #999999;
+}

@@ -1,0 +1,344 @@
+/* FailBetter.co.uk global style sheet */
+/* Menu styles, for all pages */
+/* Styles that make things work in IE 7, Firefox and Safari */
+/* Style patches for IE6 given in /general-ie6.css ... */
+
+/* ***** Define the menu as a whole ***** */
+
+/* Standard definition should work for this one, at least... */
+/* Nope! The menu box gets stretched to contain all the inner elements */
+/* So I've added in a <div> to do the blue bar */
+/* And it looks like in IE6 the padding is *included* in the height, not added to it */
+/* Yeah... and the border too... */
+div.menu {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  width: 135px;
+/*  height: 390px; */
+  bottom: 11px;
+  padding: 0;
+  margin: 0;
+  background-color: #212B84;
+}
+
+/* Define the container for the whole menu */
+ul.menu {
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 15px;
+/*  position: relative;
+  margin-top: 14px;
+  margin-left: 15px; */
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+h2.menu {
+  display: none;
+}
+
+
+
+/* ***** Define normal behaviour/looks for all main menu items ***** */
+
+/* Size, padding, margin etc for the main menu items */
+.menu li {
+  display: block;
+  width: 126px;
+/* Don't specify the height!  Allows modern browsers to work it out automacially for selected menu items with submenu... */
+/*  height: 25px; */
+  margin: 0 0 1px 9px;
+  border: 0 none;
+  padding: 0;
+  background-color: transparent;
+  list-style-type: none;
+/*  float: left; */
+  position: relative;
+/* Keep all the main menu items at the same level (also gives us a local z-index stack thingy within the li) */
+  z-index: 1;
+}
+
+/* The li is actually invisible - the span, strong, or a element is the one that we see */
+.menu li span,
+.menu li strong,
+.menu li a {
+  display: block;
+  width: 115px;
+  height: 23px;
+/* need to do position: relative in order for the z-index and other things to work... */
+  position: relative;
+  border: transparent solid;
+  border-width: 1px 0px 1px 1px;
+  margin: 0px;
+  padding: 0px 10px 0 0;
+  background-color: transparent;
+  color: #bbbbbb;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: lowercase;
+  text-decoration: none;
+  text-align: right;
+/* using line-height to center the text vertically */
+  line-height: 20px;
+}
+
+/* Highlight the main menu items when we hover over them */
+/* Modern trousers, and older ones with the :hover patch will work with 'li:hover a' */
+/* (And this ensures that the item stays highlighted as we move up and down the submenu) */
+/* Older browsers without Javascript won't do that though, so we have a 'li a:hover' rule too... */
+.menu li a:hover,
+.menu li:hover a,
+.menu li a:focus,
+.menu li a:active {
+  padding-right: 23px;
+/* keep the main menu item in front of the pop-up menu, so it overlaps the border */
+  z-index: 2;
+  text-decoration: none;
+/* Samsung F700 seems to have real issues with this line!!.. */
+/*  outline: 0 none; */
+}
+.menu li a:hover,
+.menu li:hover a {
+  border-color: #a2a2a2;
+  background-color: #333333;
+}
+.menu li a:focus {
+  border-color: #dddddd;
+  background-color: #333333;
+}
+.menu li a:active {
+  border-color: #dddddd;
+  background-color: #444444;
+}
+
+/* Ensure that the pop-up submenu sits on top of any list items below (or above) it.. */
+.menu li:hover {
+  z-index: 3;
+}
+
+/* Set the widths of the main menu items to be correct to only just overlap with the left border of their submenu */
+/* IE6 has to use .menu li.has-submenu a:hover ... */
+/* Would be nice to find some way of stopping the PS3 from doing this, as it doesn't then pop-up the menu... */
+/* (Or work out how to get it to do the pop-up menus!.. :-) */
+.menu li.has-submenu:hover a {
+  padding-right: 18px;
+}
+
+
+
+/* ***** By default, hide all submenus ***** */
+.menu li.has-submenu div {
+/*  display: none; */
+  visibility: hidden;
+}
+
+
+
+/* ***** Display the pop-up submenu when we hover over it ***** */
+
+.menu li.has-submenu:hover div,
+.menu li.has-submenu:focus div,
+.menu li.has-submenu:active div {
+/*  display: block; */
+  visibility: visible;
+}
+.menu li.has-submenu div {
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 133px;
+  padding: 0;
+  border: #a2a2a2 solid 1px;
+  background-color: #333333;
+/* keep the pop-up menu behind the main menu item, so it overlaps the border */
+  z-index: 1;
+}
+
+.menu li.has-submenu .sub-menu {
+  display: block;
+  position: static;
+  width: 127px;
+  margin: 2px;
+  padding: 0px 1px 1px;
+  border: #a2a2a2 solid 1px;
+  background-color: transparent;
+} 
+
+
+/* When the productions menu is selected, offset the Press sub-menu up by a chunk so it stays in our main area */
+/* Offset is margin-top: -<number of items to move up by> * 26 */
+/* Using margin-top instead of top 'cos it prevents IE thinking that the window gets bigger (longer) when the menu appears */
+.menu.productions li.has-submenu#menu-press div {
+/*  margin-top: -182px; */
+}
+
+/* When the company menu is selected, offset the Press sub-menu up by a small chunk so it stays in our main area */
+/* Offset is margin-top: -<number of items to move up by> * 26 */
+.menu.company li.has-submenu#menu-press div {
+/*  margin-top: -52px; */
+}
+
+/* When the company menu is selected, offset the Press sub-menu up by a small chunk so it stays in our main area */
+/* Offset is margin-top: -<number of items to move up by> * 26 */
+.menu.company li.has-submenu#menu-productions div {
+/*  margin-top: -26px; */
+}
+
+
+/* Default state for a submenu list item... */
+.menu li.has-submenu .sub-menu li {
+/* Most properties are inherited from the main menu items */
+  position: static;
+  margin: 1px 0 0;
+}
+
+/* Default state for the text of a submenu list item... */
+/* (including '...li a:hover' to stop submenu items getting wider when you hover over them, in IE6) */
+/* (Getting wider 'cos of the rule above for '.menu li a:hover' being more specific than the other rules, for IE6) */
+.menu li.has-submenu .sub-menu li a:hover,
+.menu li.has-submenu .sub-menu li strong,
+.menu li.has-submenu .sub-menu li a {
+/* Most properties are inherited from the main menu items */
+  width: 122px;
+  padding: 0px 0px 0px 3px;
+  border: 1px solid transparent;
+  font-size: 10px;
+  text-align: left;
+/* using line-height to center the text vertically */
+  line-height: 22px;
+}
+
+
+/* Highlight the menu item as we hover over it */
+.menu li.has-submenu .sub-menu li a:hover {
+  border-color: #a2a2a2;
+  background-color: #444444;
+}
+.menu li.has-submenu .sub-menu li a:focus {
+  border-color: #dddddd;
+  background-color: #444444;
+}
+.menu li.has-submenu .sub-menu li a:active {
+  border-color: #dddddd;
+  background-color: #555555;
+}
+
+
+
+/* ***** Start definitions for visible, currently selected sub-menus ***** */
+
+/* Highlight the main menu item, if it is currently selected */
+.menu li.selected span,
+.menu li.selected strong,
+.menu li:hover.selected span,
+.menu li:hover.selected strong,
+.menu li:hover.selected a,
+.menu li.selected a {
+  border-color: #a2a2a2;
+  background-color: #222222;
+  padding-right: 24px;
+}
+
+/* Highlight the main menu item as a link, if it is currently selected and we hover over it... */
+.menu li:hover.selected a:hover,
+.menu li.selected a:hover {
+  background-color: #333333;
+  padding-right: 24px;
+}
+.menu li.selected a:focus {
+  border-color: #dddddd;
+  background-color: #333333;
+  padding-right: 24px;
+}
+.menu li.selected a:active {
+  border-color: #dddddd;
+  background-color: #444444;
+  padding-right: 24px;
+}
+
+/* Selected submenus are always visible! */
+.menu li.selected div {
+  display: block;
+  position: static;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.menu li.selected .sub-menu {
+  display: block;
+  position: relative;
+  width: 126px;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  background-color: transparent;
+  z-index: 1;
+}
+
+
+/* Default state for a submenu item, when the submenu is visible */
+/* (More like a main menu item than a pop-up submenu item!..) */
+.menu li.selected .sub-menu li {
+/* Most properties are inherited from the main menu items */
+  margin: 1px 0 0 6px;
+}
+
+/* Default state for a submenu item, when the submenu is visible */
+/* (Text is a bit like a pop-up submenu item though...) */
+.menu li.selected .sub-menu li span,
+.menu li.selected .sub-menu li strong,
+.menu li.selected .sub-menu li a {
+/* Most properties are inherited from the main menu items */
+  width: 114px;
+  height: 20px;
+  padding: 0px 5px 0px 0px;
+  border-color: transparent;
+  background-color: transparent;
+  font-size: 10px;
+/* using line-height to center the text vertically */
+  line-height: 18px;
+}
+
+
+/* Highlight it when we hover over it */
+.menu li.selected .sub-menu li:hover a {
+  border-color: #a2a2a2;
+  padding-right: 18px;
+  background-color: #333333;
+}
+.menu li.selected .sub-menu li a:focus {
+  border-color: #dddddd;
+  padding-right: 18px;
+  background-color: #333333;
+}
+.menu li.selected .sub-menu li a:active {
+  border-color: #dddddd;
+  padding-right: 18px;
+  background-color: #444444;
+}
+
+/* However... if we're within the submenu already, the submenu items want to stick out a little bit more!.. */
+.menu.submenu-item li.selected .sub-menu li:hover a,
+.menu.submenu-item li.selected .sub-menu li a:focus,
+.menu.submenu-item li.selected .sub-menu li a:active {
+  padding-right: 22px;
+}
+
+/* Highlight the currently selected submenu item */
+.menu li.selected .sub-menu li.selected span,
+.menu li.selected .sub-menu li.selected strong {
+  border-color: #a2a2a2;
+  padding-right: 23px;
+  background-color: #222222;
+}

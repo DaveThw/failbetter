@@ -1,0 +1,185 @@
+/* Production specific colour schemes... */
+
+
+
+/* Discords */
+dt#discords a,
+h1#discords {
+  background-color: #b48506;
+  color: #cccccc;
+}
+
+dt#discords a {
+  background-image: url("./images/orange-title.gif");
+}
+
+h1#discords {
+  background-image: url("./images/orange-foot.gif");
+}
+
+
+
+/* Lorca */
+dt#lorca a,
+h1#lorca {
+/*  background-color: #800000; */
+/*  color: #bbbbbb; */
+  background-color: #810303;
+  color: #cccccc;
+}
+
+dt#lorca a {
+  background-image: url("./images/red-title.gif");
+}
+
+h1#lorca {
+  background-image: url("./images/red-foot.gif");
+}
+
+
+
+/* Persephone */
+dt#persephone a,
+h1#persephone {
+  background-color: #b48506;
+  color: #cccccc;
+}
+
+dt#persephone a {
+  background-image: url("./images/orange-title.gif");
+}
+
+h1#persephone {
+  background-image: url("./images/orange-foot.gif");
+}
+
+
+
+/* Stasis: Beckett Shorts */
+dt#stasis a,
+h1#stasis {
+/*  background-color: #004820; */
+  background-color: #004824;
+  color: #cccccc;
+}
+
+dt#stasis a {
+  background-image: url("./images/green-title.gif");
+}
+
+h1#stasis {
+  background-image: url("./images/green-foot.gif");
+}
+
+
+
+/* Diary of a Madman */
+dt#madman a,
+h1#madman {
+/*  color: #222222; */
+  background-color: #d3d3d3;
+  color: #333333;
+}
+
+dt#madman a {
+  background-image: url("./images/white-title.gif");
+}
+
+h1#madman {
+  background-image: url("./images/white-foot.gif");
+}
+
+
+
+/* Head */
+dt#head a,
+h1#head {
+/*  background-color: #800000; */
+/*  color: #bbbbbb; */
+  background-color: #810303;
+  color: #cccccc;
+}
+
+dt#head a {
+  background-image: url("./images/red-title.gif");
+}
+
+h1#head {
+  background-image: url("./images/red-foot.gif");
+}
+
+
+
+/* Phaedra's Love */
+dt#phaedraslove a,
+h1#phaedraslove {
+/*  background-color: #c08000; */
+/*  color: #bbbbbb; */
+  background-color: #b48506;
+  color: #cccccc;
+}
+
+dt#phaedraslove a {
+  background-image: url("./images/orange-title.gif");
+}
+
+h1#phaedraslove {
+  background-image: url("./images/orange-foot.gif");
+}
+
+
+
+/* Echo and Narcissus */
+dt#echoandnarcissus a,
+h1#echoandnarcissus {
+/*  background-color: #004820; */
+/*  color: #bbbbbb; */
+  background-color: #004824;
+  color: #cccccc;
+}
+
+dt#echoandnarcissus a {
+  background-image: url("./images/green-title.gif");
+}
+
+h1#echoandnarcissus {
+  background-image: url("./images/green-foot.gif");
+}
+
+
+
+/* Crave */
+dt#crave a,
+h1#crave {
+/*  background-color: #1010b0; */
+/*  color: #bbbbbb; */
+  background-color: #212B85;
+  color: #cccccc;
+}
+
+dt#crave a {
+  background-image: url("./images/blue-title.gif");
+}
+
+h1#crave {
+  background-image: url("./images/blue-foot.gif");
+}
+
+
+
+/* Pinter Double Bill */
+dt#pinter a,
+h1#pinter {
+/*  background-color: #cccccc; */
+/*  color: #222222; */
+  background-color: #d3d3d3;
+  color: #333333;
+}
+
+dt#pinter a {
+  background-image: url("./images/white-title.gif");
+}
+
+h1#pinter {
+  background-image: url("./images/white-foot.gif");
+}

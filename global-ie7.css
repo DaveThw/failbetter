@@ -1,0 +1,13 @@
+/* FailBetter.co.uk global style sheet */
+/* Style patches that make things work in IE 7 (and earlier) */
+
+
+/* Stop the bottom of the main menu dropping down by 1 pixel when you hover over a sub menu... */
+/* The other option is to float the list items left, but that doesn't work well with IE6... */
+.menu li.has-submenu:hover {
+/*  margin-bottom: -1px; */
+}
+.menu li.has-submenu {
+  margin-bottom: -1px;
+}
+

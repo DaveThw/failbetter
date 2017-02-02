@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /press/stasis/BeckettPress_Oxford.pdf
+Disallow: /press/madman/fbp-madman-press-pack.pdf
+Disallow: /press/madman/madman_press-release_(edinburgh).pdf
+Disallow: /press/madman/madman_press-release.pdf

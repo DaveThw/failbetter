@@ -1,0 +1,14 @@
+/* Styles specific to the 'Contact Us' pages */
+/* CSS tweaks to get thinks to look right in IE6 */
+
+/* Styles for the contact_done page */
+
+.content .company-logo .fail-better {
+  width: 136px;
+  height: 27px;
+}
+
+.content .company-logo .productions {
+  width: 136px;
+  height: 33px;
+}

@@ -1,0 +1,23 @@
+/* Styles specific to the home page (/index.html) */
+
+/* Styles for Internet Explorer */
+
+.news {
+  scrollbar-face-color: #333333;
+  scrollbar-track-color: #333333;
+  scrollbar-arrow-color: #999999;
+}
+
+/* IE 6 doesn't seem to use -3dlight- or -darkshadow-, so we use these two */
+.news {
+  scrollbar-shadow-color: #999999;
+  scrollbar-highlight-color: #999999;
+}
+
+/* But in IE 7 we want to use -3dlight- and -darkshadow- for the look we're after */
+*>.news {
+  scrollbar-shadow-color: #333333;
+  scrollbar-highlight-color: #333333;
+  scrollbar-3dlight-color: #999999;
+  scrollbar-darkshadow-color: #999999;
+}

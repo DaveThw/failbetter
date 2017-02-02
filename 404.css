@@ -1,0 +1,71 @@
+/* FailBetter.co.uk global style sheet */
+/* Styles for the 404 Error Page */
+
+h1 {
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: normal;
+  text-decoration: none;
+  text-transform: none;
+  margin: 10px 0 15px;
+}
+
+p {
+  margin: 10px 0;
+  padding: 0;
+}
+
+/* Styles for the google 404 widget... */
+#goog-wm .content {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 10px 0 0;
+  border: 0 none;
+  background-color: transparent;
+/*  overflow: auto; */
+}
+
+#goog-wm h3 {
+  font-size: 11px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: normal;
+  text-decoration: none;
+  text-transform: none;
+  margin: 0;
+}
+
+#goog-wm ul {
+  padding: 0;
+  margin: 5px 0 0;
+}
+
+#goog-wm li {
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+}
+
+#goog-wm form {
+  margin: 3px 0 0;
+  padding: 0;
+}
+
+#goog-wm form input {
+/* IE seems to default to some other font for form inputs... */
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #222222;
+  background-color: #bbbbbb;
+  border: 0 none;
+/*  display: block; */
+  margin: 0;
+}
+
+#goog-wm #goog-wm-sb {
+  margin-left: 10px;
+}
